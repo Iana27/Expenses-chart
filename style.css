@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(27, 66%, 92%);
+  font-family: "DM Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+/* /*position version */
+
+.container {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  top: 200px;
+  left: 10px;
+}
+
+.top {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  background-color: hsl(10, 79%, 65%);
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.balance {
+  position: absolute;
+  color: #fff;
+  font-size: 10px;
+  padding-left: 20px;
+}
+.totalSum {
+  color: #fff;
+  position: absolute;
+  top: 20px;
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+.icon-1 {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  width: 25px;
+  height: 25px;
+  background-color: hsl(25, 47%, 15%);
+  border-radius: 50%;
+}
+
+.icon-2 {
+  position: absolute;
+  right: 33px;
+  top: 25px;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border-style: ridge;
+  border-color: #fff;
+  border-width: 1.5px;
+  border-radius: 50%;
+}
+
+.bottom {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-top: 15px;
+  background-color: hsl(33, 100%, 98%);
+  top: 70px;
+  border-radius: 10px;
+}
+.border {
+  display: flex;
+  position: absolute;
+  height: 10px;
+  left: 20px;
+  border-bottom: 2px solid #e7dddb;
+  width: 87%;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+}
+.spending {
+  font-weight: 600;
+  padding-left: 15px;
+  text-align: left;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  list-style: none;
+  margin-bottom: 0;
+  height: calc(100% - 130px);
+  padding: 0 15px 0 15px;
+  text-align: center;
+  font-size: 10px;
+  color: hsl(28, 10%, 53%);
+}
+.days li {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.days li p {
+  margin: 6px 0 10px 0;
+}
+
+.days li span {
+  width: 80%;
+  height: 10%;
+  background-color: hsl(10, 79%, 65%);
+  display: block;
+  margin: 0 auto;
+  border-radius: 3px;
+}
+.days li:nth-child(1) span {
+  height: 10%;
+  width: 70%;
+}
+.days li:nth-child(2) span {
+  height: 40%;
+}
+.days li:nth-child(3) span {
+  height: 70%;
+  background-color: hsl(186, 34%, 60%);
+}
+.days li:nth-child(4) span {
+  height: 30%;
+}
+.days li:nth-child(5) span {
+  height: 20%;
+  width: 80%;
+}
+.days li:nth-child(6) span {
+  height: 55%;
+}
+.days li:nth-child(7) span {
+  height: 25%;
+}
+
+.days li span:hover {
+  cursor: pointer;
+  background-color: #fbb3a5;
+}
+.days li:nth-child(3) span:hover {
+  background-color: #a8e8ef;
+}
+.amount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 35px;
+  height: 23px;
+  border-radius: 3px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 9px;
+  font-weight: bold;
+}
+
+.visible {
+  background-color: black;
+}
+.total {
+  position: relative;
+  width: 100%;
+
+  height: 65px;
+
+  top: 10px;
+  overflow: hidden;
+  bottom: 10px;
+}
+.totalText {
+  color: hsl(28, 10%, 53%);
+  font-size: 7px;
+  letter-spacing: 0.5px;
+  position: absolute;
+  top: 3px;
+  left: 15px;
+}
+
+.spent {
+  position: absolute;
+  top: 4px;
+  left: 15px;
+  font-weight: bolder;
+  font-size: 22px;
+}
+.average {
+  position: absolute;
+  right: 20px;
+  font-size: 8px;
+  font-weight: bolder;
+  top: 20px;
+}
+.text {
+  position: absolute;
+  right: 20px;
+  font-size: 8px;
+  top: 30px;
+  color: hsl(28, 10%, 53%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  .container {
+    position: relative;
+    width: 270px;
+
+    display: flex;
+    flex-direction: column;
+    top: 100px;
+    left: 10px;
+  }
+  .bottom {
+    position: absolute;
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+    margin-top: 15px;
+    background-color: hsl(33, 100%, 98%);
+    top: 70px;
+    border-radius: 10px;
+  }
+}

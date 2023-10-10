@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Expenses chart component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="container">
+      <section class="top">
+        <h5 class="balance">My balance</h5>
+        <p class="totalSum">$921.28</p>
+        <div class="icon-1"></div>
+        <div class="icon-2"></div>
+      </section>
+      <section class="bottom">
+        <p class="spending">Spending - Last 7 days</p>
+        <ul id="days" class="days">
+          <li>
+            <p id="mon" class="amount amount-1"></p>
+            <span class="monChar"></span>
+            <p class="day"></p>
+          </li>
+          <li>
+            <p id="tue" class="amount amount-2">3</p>
+            <span class="tueChar"></span>
+            <p class="day">Tue</p>
+          </li>
+          <li>
+            <p id="wed" class="amount amount-3"></p>
+            <span class="wedChar"></span>
+            <p class="day"></p>
+          </li>
+          <li>
+            <p id="thu" class="amount amount-4"></p>
+            <span class="thuChar"></span>
+            <p class="day"></p>
+          </li>
+          <li>
+            <p id="fri" class="amount amount-5"></p>
+            <span class="friChar"></span>
+            <p class="day"></p>
+          </li>
+          <li>
+            <p id="sat" class="amount amount-6"></p>
+            <span class="satChar-active"></span>
+            <p class="day"></p>
+          </li>
+          <li>
+            <p id="sun" class="amount amount-7"></p>
+            <span class="sunChar"></span>
+            <p class="day"></p>
+          </li>
+        </ul>
+        <div class="border"></div>
+        <div class="total">
+          <h5 class="totalText">Total this month</h5>
+          <p class="spent">$478.33</p>
+          <p class="average">+2.4%</p>
+          <p class="text">from last month</p>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Iana Lazareva</a>.
+    </div>
+  </body>
+</html>
